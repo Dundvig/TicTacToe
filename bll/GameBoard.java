@@ -11,7 +11,14 @@ package tictactoe.bll;
  */
 public class GameBoard implements IGameModel
 {
+<<<<<<< Updated upstream
+
+private int currentPlayer;
+private GameField[][] gameFields = new GameField[3][3];
+=======
     private GameField[][] gameFields = new GameField[3][3];
+    private int currentPlayer;
+>>>>>>> Stashed changes
 
     /**
      * Returns 0 for player 0, 1 for player 1.
@@ -20,9 +27,17 @@ public class GameBoard implements IGameModel
      */
     public int getNextPlayer()
     {
+<<<<<<< Updated upstream
         //TODO Implement this method
+
+        return (currentPlayer == 0 ? 0 : 1);
         return 0;
+=======
+        //Will set current player, depending on who is currently the current player. Or something like that.
+        return (currentPlayer == 0 ? 0 : 1);
+>>>>>>> Stashed changes
         //Miran
+        main
     }
 
     /**
@@ -63,7 +78,14 @@ public class GameBoard implements IGameModel
      */
     public void newGame()
     {
+<<<<<<< Updated upstream
         //TODO Implement this method
+=======
+        /** TODO Implement this method
+         * Sets the current player to 0 when starting a new game.
+         */
+>>>>>>> Stashed changes
+        currentPlayer = 0;
     }
 
 }
