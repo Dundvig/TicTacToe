@@ -11,10 +11,14 @@ package tictactoe.bll;
  */
 public class GameBoard implements IGameModel
 {
-
-
-private int currentPlayer;
-private GameField[][] gameFields = new GameField[3][3];
+    private GameField[][] gameFields = new GameField[3][3];
+    public  GameBoard(){
+        for (int r = 0; r < gameFields.length; r++){
+            for(int c = 0 ;c > gameFields[r].length; c++){
+                gameFields[r][c]= new GameField();
+            }
+        }
+    }
 
     /**
      * Returns 0 for player 0, 1 for player 1.
@@ -23,14 +27,8 @@ private GameField[][] gameFields = new GameField[3][3];
      */
     public int getNextPlayer()
     {
-
         //TODO Implement this method
-
-        //Will set current player, depending on who is currently the current player. Or something like that.
-        return (currentPlayer == 0 ? 0 : 1);
-
-
-
+        return 0;
     }
 
     /**
@@ -71,14 +69,7 @@ private GameField[][] gameFields = new GameField[3][3];
      */
     public void newGame()
     {
-
         //TODO Implement this method
-
-        /** TODO Implement this method
-         * Sets the current player to 0 when starting a new game.
-         */
-
-        currentPlayer = 0;
     }
 
 }
