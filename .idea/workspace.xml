@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="acf0a4f5-aee0-40c4-88ef-db671befb327" name="Changes" comment="Miran som kommentar">
-      <change afterPath="$PROJECT_DIR$/gui/controller/MenuScreenController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gui/views/Menuscreen.fxml" afterDir="false" />
+    <list default="true" id="acf0a4f5-aee0-40c4-88ef-db671befb327" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
