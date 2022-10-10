@@ -6,6 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="acf0a4f5-aee0-40c4-88ef-db671befb327" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bll/GameBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/bll/GameBoard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/tictactoe/tictactoe/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/tictactoe/tictactoe/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +46,26 @@
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;
   }
 }</component>
+  <component name="RunManager">
+    <configuration name="TicTacToe" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="tictactoe.gui.TicTacToe" />
+      <module name="tictactoe" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tictactoe.gui.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.TicTacToe" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -54,9 +76,6 @@
       <updated>1665385360563</updated>
       <workItem from="1665385369585" duration="129000" />
       <workItem from="1665385949698" duration="532000" />
-      <workItem from="1665386875544" duration="932000" />
-      <workItem from="1665389282608" duration="2044000" />
-      <workItem from="1665392639854" duration="375000" />
     </task>
     <servers />
   </component>

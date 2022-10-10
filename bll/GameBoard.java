@@ -11,10 +11,11 @@ package tictactoe.bll;
  */
 public class GameBoard implements IGameModel
 {
+
 private int currentPlayer;
+private GameField[][] gameFields = new GameField[3][3];
 
     /**
-     * Test af KTE
      * Returns 0 for player 0, 1 for player 1.
      *
      * @return int Id of the next player.
@@ -22,7 +23,11 @@ private int currentPlayer;
     public int getNextPlayer()
     {
         //TODO Implement this method
+
         return (currentPlayer == 0 ? 0 : 1);
+        return 0;
+        //Miran
+        main
     }
 
     /**
