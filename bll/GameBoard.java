@@ -22,6 +22,7 @@ public class GameBoard implements IGameModel
     {
         //TODO Implement this method
         return 0;
+        //Miran
     }
 
     /**
