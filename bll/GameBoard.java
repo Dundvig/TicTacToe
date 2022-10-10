@@ -11,6 +11,7 @@ package tictactoe.bll;
  */
 public class GameBoard implements IGameModel
 {
+    private GameField[][] gameFields = new GameField[3][3];
 
     /**
      * Returns 0 for player 0, 1 for player 1.
