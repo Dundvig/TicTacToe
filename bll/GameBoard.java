@@ -12,6 +12,13 @@ package tictactoe.bll;
 public class GameBoard implements IGameModel
 {
     private GameField[][] gameFields = new GameField[3][3];
+    public  GameBoard(){
+        for (int r = 0; r < gameFields.length; r++){
+            for(int c = 0 ;c > gameFields[r].length; c++){
+                gameFields[r][c]= new GameField();
+            }
+        }
+    }
 
     /**
      * Returns 0 for player 0, 1 for player 1.
