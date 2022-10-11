@@ -1,0 +1,28 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 24-08-2016, 12:36:01
+    Author     : Stegger
+*/
+@font-face{
+    -fx-font-family: "CHAWP";
+    src: url("/fonts/chawp.ttf") format("truetype");
+}
+
+.chalkstyle{
+    -fx-background-color: #346b31;
+    -fx-font-family: "CHAWP";
+
+}
+
+/
+/* #pane {
+    -fx-background-image: url(../images/background.jpg);
+    -fx-background-repeat: stretch;
+    -fx-background-position: center;
+
+}
+*/
