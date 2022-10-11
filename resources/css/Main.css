@@ -9,18 +9,20 @@ and open the template in the editor.
 */
 @font-face{
     -fx-font-family: "CHAWP";
-    src: url("/chawp.ttf") format("truetype");
+    src: url("/fonts/chawp.ttf") format("truetype");
 }
 
-.hest{
-    -fx-background-color: red;
+.chalkstyle{
+    -fx-background-color: #346b31;
     -fx-font-family: "CHAWP";
+
 }
 
-/*
-#pane {
+/
+/* #pane {
     -fx-background-image: url(../images/background.jpg);
-    -fx-background-repeat: stretch;   
+    -fx-background-repeat: stretch;
     -fx-background-position: center;
 
-}*/
+}
+*/
