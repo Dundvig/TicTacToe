@@ -10,7 +10,7 @@ public class MenuScreenController {
     public Button multiPlayer;
     public Button quitGame;
     public Button options;
-    public ToggleGroup difficultyToggle;
+    public ToggleGroup difToggle;
     public RadioButton hardMode;
     public RadioButton easyMode;
     public RadioButton intermediateMode;

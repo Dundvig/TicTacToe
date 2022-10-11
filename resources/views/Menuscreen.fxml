@@ -2,34 +2,38 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane styleClass="chalkstyle" prefHeight="500.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tictactoe.gui.controller.MenuScreenController">
+<AnchorPane prefHeight="500.0" prefWidth="400.0" styleClass="chalkstyle" stylesheets="@../css/Main.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tictactoe.gui.controller.MenuScreenController">
    <children>
-      <Button fx:id="singlePlayer" layoutX="97.0" layoutY="108.0" mnemonicParsing="false" onAction="#singlePlayerBtn" prefHeight="51.0" prefWidth="205.0" text="Single Player">
+      <Button fx:id="singlePlayer" layoutX="97.0" layoutY="108.0" mnemonicParsing="false" onAction="#singlePlayerBtn" prefHeight="51.0" prefWidth="205.0" styleClass="chalkstyle" text="Single Player" textFill="WHITE">
          <font>
             <Font size="20.0" />
          </font></Button>
-      <Button fx:id="multiPlayer" layoutX="97.0" layoutY="242.0" mnemonicParsing="false" onAction="#multiPlayerBtn" prefHeight="51.0" prefWidth="205.0" text="Multiplayer">
+      <Button fx:id="multiPlayer" layoutX="97.0" layoutY="242.0" mnemonicParsing="false" onAction="#multiPlayerBtn" prefHeight="51.0" prefWidth="205.0" styleClass="chalkstyle" text="Multiplayer" textFill="WHITE">
          <font>
             <Font size="20.0" />
          </font>
       </Button>
-      <Button fx:id="quitGame" layoutX="97.0" layoutY="420.0" mnemonicParsing="false" onAction="#quitGameBtn" prefHeight="51.0" prefWidth="205.0" text="Quit Game">
+      <Button fx:id="quitGame" layoutX="97.0" layoutY="420.0" mnemonicParsing="false" onAction="#quitGameBtn" prefHeight="51.0" prefWidth="205.0" styleClass="chalkstyle" text="Quit Game" textFill="WHITE">
          <font>
             <Font size="20.0" />
          </font>
       </Button>
-      <Button fx:id="options" layoutX="97.0" layoutY="323.0" mnemonicParsing="false" onAction="#optionsBtn" prefHeight="51.0" prefWidth="205.0" text="Options">
+      <Button fx:id="options" layoutX="97.0" layoutY="323.0" mnemonicParsing="false" onAction="#optionsBtn" prefHeight="51.0" prefWidth="205.0" styleClass="chalkstyle" text="Options" textFill="WHITE">
          <font>
             <Font size="20.0" />
          </font>
       </Button>
-      <RadioButton fx:id="easyMode" layoutX="74.0" layoutY="189.0" mnemonicParsing="false" onAction="#easyModeChoice" text="Easy" />
-      <RadioButton fx:id="hardMode" layoutX="279.0" layoutY="189.0" mnemonicParsing="false" onAction="#hardModeChoice" text="Hard" />
-      <RadioButton fx:id="intermediateMode" layoutX="155.0" layoutY="189.0" mnemonicParsing="false" onAction="#intermediateModeChoice" text="Intermediate" />
+      <RadioButton fx:id="easyMode" layoutX="74.0" layoutY="189.0" mnemonicParsing="false" selected="true" text="Easy" textFill="WHITE">
+         <toggleGroup>
+            <ToggleGroup fx:id="difToggle" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="hardMode" layoutX="279.0" layoutY="189.0" mnemonicParsing="false" text="Hard" textFill="WHITE" toggleGroup="$difToggle" />
+      <RadioButton fx:id="intermediateMode" layoutX="155.0" layoutY="189.0" mnemonicParsing="false" text="Intermediate" textFill="WHITE" toggleGroup="$difToggle" />
       <ImageView fx:id="image" fitHeight="70.0" fitWidth="330.0" layoutX="35.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true" />
    </children>
 </AnchorPane>
