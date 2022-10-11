@@ -15,6 +15,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.layout.GridPane;
 import tictactoe.bll.GameBoard;
+import tictactoe.bll.GameField;
 import tictactoe.bll.IGameModel;
 
 /**
@@ -36,6 +37,7 @@ public class TicTacViewController implements Initializable
     private static final String TXT_PLAYER = "Player: ";
     private IGameModel game;
 
+
     @FXML
     private void handleButtonAction(ActionEvent event)
     {
@@ -45,25 +47,42 @@ public class TicTacViewController implements Initializable
             Integer col = GridPane.getColumnIndex((Node) event.getSource());
             int r = (row == null) ? 0 : row;
             int c = (col == null) ? 0 : col;
-            int player = game.getNextPlayer();
-            if (game.play(c, r))
+            //int player = game.getNextPlayer();
+            System.out.println("r="+r+" c="+c);
+            if (game.play(c, r) && game.getWinner() ==-1)
             {
+                Button btn = (Button) event.getSource();
+
                 if (game.isGameOver())
                 {
                     int winner = game.getWinner();
                     displayWinner(winner);
+                    btn.setText(getLabel(game.getNextPlayer()));
                 }
                 else
                 {
-                    Button btn = (Button) event.getSource();
-                    String xOrO = player == 0 ? "X" : "O";
-                    btn.setText(xOrO);
+                    btn.setText(getLabel(game.getNextPlayer()));
                     setPlayer();
                 }
+
             }
         } catch (Exception e)
         {
             System.out.println(e.getMessage());
+        }
+    }
+
+    public String getLabel(int owner){
+        switch (owner){
+            case 0:
+                return "X";
+            case 1:
+                return "O";
+            case  -1:
+                return "";
+            default:
+                return "Error";
+
         }
     }
 

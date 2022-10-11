@@ -1,39 +1,28 @@
 package tictactoe.bll;
 
 public class GameField {
-    private  int owner = -1;
-    private  boolean isTaken = false;
+    private  int owner =-1;
 
-    GameField(){
-    }
-
-    public void setOwner(int owner) {
-        this.owner = owner;
+    public void setOwner(int o) {
+        this.owner = o;
     }
 
     public int getOwner(){
-        return owner;
-    }
-
-    public void setTaken(boolean taken) {
-        isTaken = taken;
+        return this.owner;
     }
 
     public boolean isTaken() {
-        return isTaken;
+        return owner!=-1;
     }
 
-    public  String getLabel(){
-        switch (owner){
-            case 0:
-                return "X";
-            case 1:
-                return "O";
-            case  -1:
-                return "";
-            default:
-                return "Error";
 
+    public static GameField[][] newGameFields(){
+        GameField[][] output = new GameField[3][3];
+        for (int r = 0; r < output.length; r++){
+            for(int c = 0 ;c < output[r].length; c++){
+                output[r][c]= new GameField();
+            }
         }
+        return output;
     }
 }

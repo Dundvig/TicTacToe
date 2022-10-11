@@ -11,14 +11,10 @@ package tictactoe.bll;
  */
 public class GameBoard implements IGameModel
 {
-    private GameField[][] gameFields = new GameField[3][3];
-    public  GameBoard(){
-        for (int r = 0; r < gameFields.length; r++){
-            for(int c = 0 ;c > gameFields[r].length; c++){
-                gameFields[r][c]= new GameField();
-            }
-        }
-    }
+
+    private GameField[][] gameFields = GameField.newGameFields();
+    private int currentPlayer=0;
+    private  int winner =-1;
 
     /**
      * Returns 0 for player 0, 1 for player 1.
@@ -27,8 +23,7 @@ public class GameBoard implements IGameModel
      */
     public int getNextPlayer()
     {
-        //TODO Implement this method
-        return 0;
+        return this.currentPlayer;
     }
 
     /**
@@ -43,14 +38,94 @@ public class GameBoard implements IGameModel
      */
     public boolean play(int col, int row)
     {
-        //TODO Implement this method
-        return true;
-    }
-
-    public boolean isGameOver()
-    {
-        //TODO Implement this method
+        /**
+         * Check if field i taken.
+         * If it is not taken, owner will be set to current player, and Taken will be set to true.
+         * and then current player will swicht
+         **/
+        if(!gameFields[row][col].isTaken()){
+            gameFields[row][col].setOwner(this.currentPlayer);
+            this.currentPlayer = switchPlayer(this.currentPlayer);
+            return true;
+        }
         return false;
+    }
+    public boolean isGameOver() {
+        boolean gameover = false;
+        if(winner!= -1){return true;}
+        //1
+        //Horisontal
+        if(gameFields[0][0].isTaken()){
+            if(gameFields[0][1].getOwner()== gameFields[0][0].getOwner()) {
+                if(gameFields[0][2].getOwner()== gameFields[0][0].getOwner()){
+                    winner = gameFields[0][0].getOwner();
+                    return true;
+        }}}
+        //Diagonaly
+        if(gameFields[0][0].isTaken()){
+            if(gameFields[1][1].getOwner()== gameFields[0][0].getOwner()) {
+                if(gameFields[2][2].getOwner()== gameFields[0][0].getOwner()){
+                    winner = gameFields[0][0].getOwner();
+                    return true;
+        }}}
+        //Vertical
+        if(gameFields[0][0].isTaken()){
+            if(gameFields[1][0].getOwner()== gameFields[0][0].getOwner()) {
+                if(gameFields[2][0].getOwner()== gameFields[0][0].getOwner()){
+                    winner = gameFields[0][0].getOwner();
+                    return true;
+        }}}
+
+        //2
+        //Vertical
+        if(gameFields[0][1].isTaken()){
+            if(gameFields[1][1].getOwner()== gameFields[0][1].getOwner()) {
+                if(gameFields[2][1].getOwner()== gameFields[0][1].getOwner()){
+                    winner = gameFields[0][1].getOwner();
+                    return true;
+        }}}
+        //3
+        //Vertical
+        if(gameFields[0][2].isTaken()){
+            if(gameFields[1][2].getOwner()== gameFields[0][2].getOwner()) {
+                if(gameFields[2][2].getOwner()== gameFields[0][2].getOwner()){
+                    winner = gameFields[0][2].getOwner();
+                    return true;
+        }}}
+        if(gameFields[0][2].isTaken()){
+            if(gameFields[1][1].getOwner()== gameFields[0][2].getOwner()) {
+                if(gameFields[2][0].getOwner()== gameFields[0][2].getOwner()){
+                    winner = gameFields[0][2].getOwner();
+                    return true;
+        }}}
+        //4
+        if(gameFields[1][0].isTaken()){
+            if(gameFields[1][1].getOwner()== gameFields[1][0].getOwner()) {
+                if(gameFields[1][2].getOwner()== gameFields[1][0].getOwner()){
+                    winner = gameFields[1][0].getOwner();
+                    return true;
+        }}}
+        //7
+        if(gameFields[2][0].isTaken()){
+            if(gameFields[2][1].getOwner()== gameFields[2][0].getOwner()) {
+                if(gameFields[2][2].getOwner()== gameFields[2][0].getOwner()){
+                    winner = gameFields[2][0].getOwner();
+                    return true;
+        }}}
+
+        /**
+         * Check if all fields i taken. If all fields is not taken the game will continue
+         */
+
+            for (int r = 0; r < gameFields.length; r++) {
+                for (int c = 0; c < gameFields[r].length; c++) {
+                    if(!gameFields[r][c].isTaken()){return false;}
+
+                }
+            }
+
+
+        return true;
     }
 
     /**
@@ -60,8 +135,8 @@ public class GameBoard implements IGameModel
      */
     public int getWinner()
     {
-        //TODO Implement this method
-        return -1;
+
+        return winner;
     }
 
     /**
@@ -69,7 +144,22 @@ public class GameBoard implements IGameModel
      */
     public void newGame()
     {
-        //TODO Implement this method
+        gameFields = GameField.newGameFields();
+        currentPlayer = 0;
+        winner = -1;
+    }
+
+    private int switchPlayer(int p){
+        switch (p){
+            case 0:
+                return 1;
+            case 1:
+                return 0;
+            default:
+                return 0;
+        }
+
+
     }
 
 }
