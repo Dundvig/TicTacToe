@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="acf0a4f5-aee0-40c4-88ef-db671befb327" name="Changes" comment="Newest Main that works">
-      <change afterPath="$PROJECT_DIR$/gui/MenuScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gui/controller/MenuScreenController.java" beforeDir="false" afterPath="$PROJECT_DIR$/gui/controller/MenuScreenController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gui/views/Menuscreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/gui/views/Menuscreen.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/tictactoe/tictactoe/gui/views/Menuscreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/tictactoe/tictactoe/gui/views/Menuscreen.fxml" afterDir="false" />
-    </list>
+    <list default="true" id="acf0a4f5-aee0-40c4-88ef-db671befb327" name="Changes" comment="Added difficulty toggle to menu screen" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -128,7 +122,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665395893476</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Added difficulty toggle to menu screen">
+      <created>1665399267532</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1665399267532</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -148,6 +149,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Miran som kommentar" />
     <MESSAGE value="Newest Main that works" />
-    <option name="LAST_COMMIT_MESSAGE" value="Newest Main that works" />
+    <MESSAGE value="Added difficulty toggle to menu screen" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added difficulty toggle to menu screen" />
   </component>
 </project>
