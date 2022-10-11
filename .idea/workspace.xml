@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="acf0a4f5-aee0-40c4-88ef-db671befb327" name="Changes" comment="Miran som kommentar">
-      <change beforePath="$PROJECT_DIR$/bll/GameBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/bll/GameBoard.java" afterDir="false" />
-    </list>
+    <list default="true" id="acf0a4f5-aee0-40c4-88ef-db671befb327" name="Changes" comment="Miran som kommentar" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -74,6 +72,7 @@
       <workItem from="1665385369585" duration="129000" />
       <workItem from="1665385949698" duration="532000" />
       <workItem from="1665386945693" duration="3820000" />
+      <workItem from="1665465987885" duration="629000" />
     </task>
     <task id="LOCAL-00001" summary="Miran som kommentar">
       <created>1665388367917</created>
