@@ -15,4 +15,9 @@ public class OptionsMenuController {
     public Slider sldMusicVolume;
     public Slider sldSoundFxVolume;
     public ImageView imgOptMenu;
+
+    public void btnMainMenu() {
+
+    }
+
 }

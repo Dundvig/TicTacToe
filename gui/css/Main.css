@@ -7,9 +7,20 @@ and open the template in the editor.
     Created on : 24-08-2016, 12:36:01
     Author     : Stegger
 */
+@font-face{
+    -fx-font-family: "CHAWP";
+    src: url("/fonts/chawp.ttf") format("truetype");
+}
 
+.hest{
+    -fx-background-color: red;
+    -fx-font-family: "CHAWP";
+}
+
+/*
 #pane {
     -fx-background-image: url(../images/background.jpg);
     -fx-background-repeat: stretch;   
     -fx-background-position: center;
-}
+
+}*/
