@@ -7,6 +7,7 @@ and open the template in the editor.
     Created on : 24-08-2016, 12:36:01
     Author     : Stegger
 */
+
 @font-face{
     -fx-font-family: "CHAWP";
     src: url("/fonts/chawp.ttf") format("truetype");
@@ -15,7 +16,6 @@ and open the template in the editor.
 .chalkstyle{
     -fx-background-color: #346b31;
     -fx-font-family: "CHAWP";
-
 }
 
 /* #pane {
