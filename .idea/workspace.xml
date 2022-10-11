@@ -4,19 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="acf0a4f5-aee0-40c4-88ef-db671befb327" name="Changes" comment="Added difficulty toggle to menu screen">
+    <list default="true" id="acf0a4f5-aee0-40c4-88ef-db671befb327" name="Changes" comment="Flyttet Main.CSS ned til resources.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gui/TicTacToe.java" beforeDir="false" afterPath="$PROJECT_DIR$/gui/TicTacToe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gui/css/Main.css" beforeDir="false" afterPath="$PROJECT_DIR$/gui/css/Main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/tictactoe/tictactoe/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/tictactoe/tictactoe/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/tictactoe/tictactoe/gui/css/Main.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/tictactoe/tictactoe/gui/css/Main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/tictactoe/tictactoe/gui/images/background.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/tictactoe/tictactoe/gui/views/Menuscreen.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/tictactoe/tictactoe/gui/views/OptionsMenuView.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/tictactoe/tictactoe/gui/views/TicTacView.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Menuscreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Menuscreen.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/OptionsMenuView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/OptionsMenuView.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/TicTacView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/TicTacView.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,6 +50,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Miran\OneDrive\Dokumenter\GitHub\TicTacToe\resources" />
       <recent name="C:\Users\Dundvig\IdeaProjects\tictactoe\resources" />
       <recent name="C:\Users\Dundvig\IdeaProjects\tictactoe\resources\fonts" />
       <recent name="C:\Users\Dundvig\IdeaProjects\tictactoe\gui\css" />
@@ -128,7 +118,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665388521031</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Flyttet Main.CSS ned til resources.">
+      <created>1665476731023</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1665476731023</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -147,6 +144,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Miran som kommentar" />
-    <option name="LAST_COMMIT_MESSAGE" value="Miran som kommentar" />
+    <MESSAGE value="Flyttet Main.CSS ned til resources." />
+    <option name="LAST_COMMIT_MESSAGE" value="Flyttet Main.CSS ned til resources." />
   </component>
 </project>
