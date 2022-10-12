@@ -5,15 +5,20 @@
  */
 package tictactoe.gui.controller;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.layout.GridPane;
+import javafx.stage.Stage;
 import tictactoe.bll.GameBoard;
 import tictactoe.bll.GameField;
 import tictactoe.bll.IGameModel;
@@ -128,5 +133,18 @@ public class TicTacViewController implements Initializable
             Button btn = (Button) n;
             btn.setText("");
         }
+    }
+
+    public void handleMainMenu(ActionEvent actionEvent) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("/views/Menuscreen.fxml"));
+        Stage stage = new Stage();
+        stage.setScene(new Scene(root));
+        stage.setResizable(false);
+        stage.setTitle("TicTacToe Menu");
+        stage.centerOnScreen();
+        stage.show();
+        Node n = (Node) actionEvent.getSource();
+        Stage menu = (Stage) n.getScene().getWindow();
+        menu.close();
     }
 }

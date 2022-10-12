@@ -5,6 +5,8 @@
  */
 package tictactoe.bll;
 
+import tictactoe.gui.controller.MenuScreenController;
+
 /**
  *
  * @author Stegger
@@ -15,6 +17,8 @@ public class GameBoard implements IGameModel
     private GameField[][] gameFields = GameField.newGameFields();
     private int currentPlayer=0;
     private  int winner =-1;
+
+    private int difficulty = MenuScreenController.getDif();
 
     /**
      * Returns 0 for player 0, 1 for player 1.
@@ -147,6 +151,7 @@ public class GameBoard implements IGameModel
         gameFields = GameField.newGameFields();
         currentPlayer = 0;
         winner = -1;
+        System.out.println(difficulty);
     }
 
     private int switchPlayer(int p){

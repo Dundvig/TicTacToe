@@ -4,40 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="acf0a4f5-aee0-40c4-88ef-db671befb327" name="Changes" comment="Flyttet Main.CSS ned til resources 2">
-      <change afterPath="$PROJECT_DIR$/gui/Menuscreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gui/MenuScreen.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/tictactoe/chawp.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/tictactoe/css/Main.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/tictactoe/css/Main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/tictactoe/tictactoe/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/tictactoe/tictactoe/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/tictactoe/tictactoe/gui/images/Logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/tictactoe/tictactoe/gui/images/Music.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/tictactoe/tictactoe/gui/images/bgmusic.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/tictactoe/tictactoe/gui/images/chalko.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/tictactoe/tictactoe/gui/images/chalkx.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/tictactoe/tictactoe/gui/images/easy.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/tictactoe/tictactoe/gui/images/hard.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/tictactoe/tictactoe/gui/images/intermediate.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/tictactoe/tictactoe/gui/images/mp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/tictactoe/tictactoe/gui/images/newgame.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/tictactoe/tictactoe/gui/images/options.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/tictactoe/tictactoe/gui/images/p1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/tictactoe/tictactoe/gui/images/p2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/tictactoe/tictactoe/gui/images/quit.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/tictactoe/tictactoe/gui/images/raytracing.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/tictactoe/tictactoe/gui/images/resetboard.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/tictactoe/tictactoe/gui/images/restart.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/tictactoe/tictactoe/gui/images/score.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/tictactoe/tictactoe/gui/images/sfx.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/tictactoe/tictactoe/gui/images/skins.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/tictactoe/tictactoe/gui/images/sp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/tictactoe/tictactoe/resources/chawp.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/tictactoe/tictactoe/resources/css/Main.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/tictactoe/tictactoe/resources/css/Main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/tictactoe/tictactoe/resources/views/Menuscreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/tictactoe/tictactoe/resources/views/Menuscreen.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/tictactoe/views/Menuscreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/tictactoe/views/Menuscreen.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Menuscreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Menuscreen.fxml" afterDir="false" />
-    </list>
+    <list default="true" id="acf0a4f5-aee0-40c4-88ef-db671befb327" name="Changes" comment="Final for Tirsdag" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -91,19 +58,6 @@
     </key>
   </component>
   <component name="RunManager" selected="Application.Menuscreen">
-    <configuration name="MenuScreen" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="tictactoe.gui.MenuScreen" />
-      <module name="tictactoe" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tictactoe.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Menuscreen" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="tictactoe.gui.Menuscreen" />
       <module name="tictactoe" />
@@ -133,7 +87,6 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Menuscreen" />
-        <item itemvalue="Application.MenuScreen" />
         <item itemvalue="Application.TicTacToe" />
       </list>
     </recent_temporary>
@@ -151,6 +104,7 @@
       <workItem from="1665386945693" duration="3820000" />
       <workItem from="1665465987885" duration="629000" />
       <workItem from="1665472148911" duration="2852000" />
+      <workItem from="1665479276877" duration="2415000" />
     </task>
     <task id="LOCAL-00001" summary="Miran som kommentar">
       <created>1665388367917</created>
@@ -187,7 +141,21 @@
       <option name="project" value="LOCAL" />
       <updated>1665476731023</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Rettet menuscreen så den virker nogenlunde og med style">
+      <created>1665480272631</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1665480272631</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Final for Tirsdag">
+      <created>1665481701682</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1665481701682</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -207,7 +175,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Miran som kommentar" />
     <MESSAGE value="Flyttet Main.CSS ned til resources." />
-    <option name="LAST_COMMIT_MESSAGE" value="Flyttet Main.CSS ned til resources." />
+    <MESSAGE value="Rettet menuscreen så den virker nogenlunde og med style" />
+    <MESSAGE value="Final for Tirsdag" />
+    <option name="LAST_COMMIT_MESSAGE" value="Final for Tirsdag" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
