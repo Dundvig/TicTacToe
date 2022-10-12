@@ -3,7 +3,7 @@
 
 # Log file
 *.log
-
+workspace.xml
 # BlueJ files
 *.ctxt
 
