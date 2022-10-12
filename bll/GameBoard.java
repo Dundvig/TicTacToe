@@ -151,7 +151,6 @@ public class GameBoard implements IGameModel
         gameFields = GameField.newGameFields();
         currentPlayer = 0;
         winner = -1;
-        System.out.println(difficulty);
     }
 
     private int switchPlayer(int p){

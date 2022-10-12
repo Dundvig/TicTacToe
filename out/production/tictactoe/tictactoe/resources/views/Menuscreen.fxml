@@ -18,24 +18,24 @@
          <toggleGroup>
             <ToggleGroup fx:id="difToggle" />
          </toggleGroup></RadioButton>
-      <Button fx:id="quitGame" layoutX="97.0" layoutY="418.0" mnemonicParsing="false" onAction="#quitGameBtn" prefHeight="51.0" prefWidth="205.0" style="-fx-background-color: #346b31; -fx-border-color: #FFFFFF;" styleClass="chalkFont" text="Quit Game" textAlignment="CENTER" textFill="WHITE">
+      <Button fx:id="quitGame" layoutX="97.0" layoutY="418.0" mnemonicParsing="false" onAction="#quitGameBtn" prefHeight="51.0" prefWidth="205.0" styleClass="buttonSkin" text="Quit Game" textAlignment="CENTER" textFill="WHITE">
          <font>
             <Font size="20.0" />
          </font>
       </Button>
-      <Button fx:id="multiPlayer" layoutX="50.0" layoutY="243.0" mnemonicParsing="false" onAction="#multiPlayerBtn" prefHeight="51.0" prefWidth="300.0" style="-fx-border-color: #FFFFFF; -fx-background-color: #346b31;" styleClass="chalkFont" text="Multiplayer" textAlignment="CENTER" textFill="WHITE">
+      <Button fx:id="multiPlayer" layoutX="50.0" layoutY="243.0" mnemonicParsing="false" onAction="#multiPlayerBtn" prefHeight="51.0" prefWidth="300.0" styleClass="buttonSkin" text="Multiplayer" textAlignment="CENTER" textFill="WHITE">
          <font>
             <Font size="20.0" />
          </font>
       </Button>
-      <Button fx:id="options" layoutX="50.0" layoutY="324.0" mnemonicParsing="false" onAction="#optionsBtn" prefHeight="51.0" prefWidth="300.0" style="-fx-background-color: #346b31; -fx-border-color: #FFFFFF;" styleClass="chalkFont" text="Toggle Raytracing" textAlignment="CENTER" textFill="WHITE">
+      <Button fx:id="tglRay" layoutX="50.0" layoutY="324.0" mnemonicParsing="false" onAction="#tglRayBtn" prefHeight="51.0" prefWidth="300.0" styleClass="buttonSkin" text="Toggle Raytracing" textAlignment="CENTER" textFill="WHITE">
          <font>
             <Font size="20.0" />
          </font>
       </Button>
       <RadioButton fx:id="hardMode" layoutX="279.0" layoutY="189.0" mnemonicParsing="false" text="Hard" textFill="WHITE" toggleGroup="$difToggle" />
       <RadioButton fx:id="intermediateMode" layoutX="155.0" layoutY="189.0" mnemonicParsing="false" text="Intermediate" textFill="WHITE" toggleGroup="$difToggle" />
-      <Button fx:id="singlePlayer" defaultButton="true" layoutX="50.0" layoutY="110.0" mnemonicParsing="false" onAction="#singlePlayerBtn" prefHeight="51.0" prefWidth="300.0" style="-fx-background-color: #346b31; -fx-border-color: #FFFFFF;" styleClass="chalkFont" text="Single Player" textFill="WHITE">
+      <Button fx:id="singlePlayer" defaultButton="true" layoutX="50.0" layoutY="110.0" mnemonicParsing="false" onAction="#singlePlayerBtn" prefHeight="51.0" prefWidth="300.0" styleClass="buttonSkin" text="Single Player" textFill="WHITE">
          <font>
             <Font size="20.0" />
          </font></Button>

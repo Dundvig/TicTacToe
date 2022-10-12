@@ -8,24 +8,33 @@ and open the template in the editor.
     Author     : Stegger
 */
 
+/* Import the custom font named CHAWP */
 @font-face{
     -fx-font-family: "CHAWP";
     src: url("/fonts/chawp.ttf") format("truetype");
 }
 
+/* A class style which sets the background color to green and the font to CHAWP */
 .chalkstyle{
     -fx-background-color: #346b31;
     -fx-font-family: "CHAWP";
 }
-
+/* A class style that sets the font type to CHAWP */
 .chalkFont{
     -fx-font-family: "CHAWP";
 }
-
-/* #pane {
-    -fx-background-image: url(../images/background.jpg);
-    -fx-background-repeat: stretch;
-    -fx-background-position: center;
-
+/* A class style that is used mainly for our menu buttons */
+.buttonSkin{
+    -fx-border-color: "WHITE";
+    -fx-background-color: #346b31;
+    -fx-font-family: "CHAWP";
 }
-*/
+/* A class style that is used for our board buttons */
+.boardButtons{
+    -fx-border-color: "WHITE";
+    -fx-background-color: #346b31;
+    -fx-font-family: "CHAWP";
+    -fx-text-fill: "WHITE";
+    -fx-font-size: 60;
+}
+

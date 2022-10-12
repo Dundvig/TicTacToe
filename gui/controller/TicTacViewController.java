@@ -34,9 +34,6 @@ public class TicTacViewController implements Initializable
     private Label lblPlayer;
 
     @FXML
-    private Button btnNewGame;
-
-    @FXML
     private GridPane gridPane;
     
     private static final String TXT_PLAYER = "Player: ";
@@ -135,6 +132,7 @@ public class TicTacViewController implements Initializable
         }
     }
 
+    /* Returns you to the Main Menu and closes the Game board. */
     public void handleMainMenu(ActionEvent actionEvent) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("/views/Menuscreen.fxml"));
         Stage stage = new Stage();
