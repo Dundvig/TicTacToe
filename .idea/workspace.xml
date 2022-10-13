@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="acf0a4f5-aee0-40c4-88ef-db671befb327" name="Changes" comment="Final for Tirsdag" />
+    <list default="true" id="acf0a4f5-aee0-40c4-88ef-db671befb327" name="Changes" comment="Final for Tirsdag">
+      <change afterPath="$PROJECT_DIR$/bll/ComputerMove.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui/controller/TicTacViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/gui/controller/TicTacViewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/tictactoe/tictactoe/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/tictactoe/tictactoe/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/tictactoe/tictactoe/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/tictactoe/tictactoe/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/tictactoe/tictactoe/resources/views/Menuscreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/tictactoe/tictactoe/resources/views/Menuscreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/tictactoe/tictactoe/resources/views/OptionsMenuView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/tictactoe/tictactoe/resources/views/OptionsMenuView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/tictactoe/views/Menuscreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/tictactoe/views/Menuscreen.fxml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -57,7 +66,7 @@
       <recent name="tictactoe.gui" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Menuscreen">
+  <component name="RunManager" selected="Application.TicTacToe">
     <configuration name="Menuscreen" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="tictactoe.gui.Menuscreen" />
       <module name="tictactoe" />
@@ -86,8 +95,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Menuscreen" />
         <item itemvalue="Application.TicTacToe" />
+        <item itemvalue="Application.Menuscreen" />
       </list>
     </recent_temporary>
   </component>
