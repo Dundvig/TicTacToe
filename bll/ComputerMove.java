@@ -25,12 +25,12 @@ public class ComputerMove {
         }
     }
 
-    private static int[] level1(ArrayList<int[]> emptyFilds){
-        Collections.shuffle(emptyFilds);
-       return emptyFilds.get(0);
+    private static int[] level1(ArrayList<int[]> emptyFields){
+        Collections.shuffle(emptyFields);
+       return emptyFields.get(0);
     }
 
-    private static int[] level2(ArrayList<int[]> emptyFilds){
+    private static int[] level2(ArrayList<int[]> emptyFields){
         ArrayList<int[]> prio1 = new ArrayList<>();
         prio1.add(new int[]{1,1});
 
@@ -48,18 +48,18 @@ public class ComputerMove {
         prio3.add(new int[]{0,1});
         Collections.shuffle(prio3);
 
-        if(emptyFilds.contains(prio1.get(0))){
+        if(emptyFields.contains(prio1.get(0))){
             return prio1.get(0);
         }
 
         for (int i = 0; i < prio2.size();i++){
-            if (emptyFilds.contains(prio2.get(i))){
+            if (emptyFields.contains(prio2.get(i))){
                 return prio2.get(i);
             }
         }
 
         for (int i = 0; i < prio3.size();i++){
-            if (emptyFilds.contains(prio3.get(i))){
+            if (emptyFields.contains(prio3.get(i))){
                 return prio3.get(i);
             }
         }
@@ -67,16 +67,99 @@ public class ComputerMove {
         return new int[0];
     }
 
-    private static int[] level3(ArrayList<int[]> emptyFilds, GameField[][] gameFields){
+    private static int[] level3(ArrayList<int[]> emptyFields, GameField[][] gameFields){
 
-        //Check for winning move
+        //Check for winning move. Computer is always player 1
+        for(int i = 0; i< emptyFields.size();i++){
+            if (emptyFields.get(i)[0] == 0 && emptyFields.get(i)[1] == 0){
+                if(gameFields[0][1].getOwner() == 1 && gameFields[0][2].getOwner() == 1){ return emptyFields.get(i);}
+                if(gameFields[1][1].getOwner() == 1 && gameFields[2][2].getOwner() == 1){ return emptyFields.get(i);}
+                if(gameFields[1][0].getOwner() == 1 && gameFields[2][0].getOwner() == 1){ return emptyFields.get(i);}
+            }
+            else if (emptyFields.get(i)[0] == 0 && emptyFields.get(i)[1] == 1){
+                if(gameFields[1][1].getOwner() == 1 && gameFields[2][1].getOwner() == 1){ return emptyFields.get(i);}
+                if(gameFields[0][0].getOwner() == 1 && gameFields[0][2].getOwner() == 1){ return emptyFields.get(i);}
+            }
+            else if (emptyFields.get(i)[0] == 0 && emptyFields.get(i)[1] == 2){
+                if(gameFields[0][0].getOwner() == 1 && gameFields[0][1].getOwner() == 1){ return emptyFields.get(i);}
+                if(gameFields[1][2].getOwner() == 1 && gameFields[2][2].getOwner() == 1){ return emptyFields.get(i);}
+                if(gameFields[2][0].getOwner() == 1 && gameFields[1][1].getOwner() == 1){ return emptyFields.get(i);}
+            }
+            else if (emptyFields.get(i)[0] == 1 && emptyFields.get(i)[1] == 0){
+                if(gameFields[0][0].getOwner() == 1 && gameFields[2][0].getOwner() == 1){ return emptyFields.get(i);}
+                if(gameFields[1][1].getOwner() == 1 && gameFields[1][2].getOwner() == 1){ return emptyFields.get(i);}
+            }
+            else if (emptyFields.get(i)[0] == 1 && emptyFields.get(i)[1] == 1){
+                if(gameFields[0][0].getOwner() == 1 && gameFields[2][2].getOwner() == 1){ return emptyFields.get(i);}
+                if(gameFields[2][0].getOwner() == 1 && gameFields[0][2].getOwner() == 1){ return emptyFields.get(i);}
+                if(gameFields[1][0].getOwner() == 1 && gameFields[1][2].getOwner() == 1){ return emptyFields.get(i);}
+                if(gameFields[0][1].getOwner() == 1 && gameFields[2][1].getOwner() == 1){ return emptyFields.get(i);}
+            }
+            else if (emptyFields.get(i)[0] == 1 && emptyFields.get(i)[1] == 2){
+                if(gameFields[0][2].getOwner() == 1 && gameFields[2][2].getOwner() == 1){ return emptyFields.get(i);}
+                if(gameFields[1][0].getOwner() == 1 && gameFields[1][1].getOwner() == 1){ return emptyFields.get(i);}
+            }
+            else if (emptyFields.get(i)[0] == 2 && emptyFields.get(i)[1] == 0){
+                if(gameFields[1][1].getOwner() == 1 && gameFields[0][2].getOwner() == 1){ return emptyFields.get(i);}
+                if(gameFields[0][0].getOwner() == 1 && gameFields[1][0].getOwner() == 1){ return emptyFields.get(i);}
+                if(gameFields[2][1].getOwner() == 1 && gameFields[2][2].getOwner() == 1){ return emptyFields.get(i);}
+            }
+            else if (emptyFields.get(i)[0] == 2 && emptyFields.get(i)[1] == 1){
+                if(gameFields[2][0].getOwner() == 1 && gameFields[2][2].getOwner() == 1){ return emptyFields.get(i);}
+                if(gameFields[0][1].getOwner() == 1 && gameFields[1][1].getOwner() == 1){ return emptyFields.get(i);}
+            }
+            else if (emptyFields.get(i)[0] == 2 && emptyFields.get(i)[1] == 2){
+                if(gameFields[1][1].getOwner() == 1 && gameFields[0][0].getOwner() == 1){ return emptyFields.get(i);}
+                if(gameFields[2][1].getOwner() == 1 && gameFields[2][0].getOwner() == 1){ return emptyFields.get(i);}
+                if(gameFields[0][2].getOwner() == 1 && gameFields[1][2].getOwner() == 1){ return emptyFields.get(i);}
+            }
+        }
 
-        //Check for blok playerwin
-
-        //
-        return new int[0];
+        //Check for block player wins. Player is always 0
+        for(int i = 0; i< emptyFields.size();i++) {
+            if (emptyFields.get(i)[0] == 0 && emptyFields.get(i)[1] == 0){
+                if(gameFields[0][1].getOwner() == 0 && gameFields[0][2].getOwner() == 0){ return emptyFields.get(i);}
+                if(gameFields[1][1].getOwner() == 0 && gameFields[2][2].getOwner() == 0){ return emptyFields.get(i);}
+                if(gameFields[1][0].getOwner() == 0 && gameFields[2][0].getOwner() == 0){ return emptyFields.get(i);}
+            }
+            else if (emptyFields.get(i)[0] == 0 && emptyFields.get(i)[1] == 1){
+                if(gameFields[1][1].getOwner() == 0 && gameFields[2][1].getOwner() == 0){ return emptyFields.get(i);}
+                if(gameFields[0][0].getOwner() == 0 && gameFields[0][2].getOwner() == 0){ return emptyFields.get(i);}
+            }
+            else if (emptyFields.get(i)[0] == 0 && emptyFields.get(i)[1] == 2){
+                if(gameFields[0][0].getOwner() == 0 && gameFields[0][1].getOwner() == 0){ return emptyFields.get(i);}
+                if(gameFields[1][2].getOwner() == 0 && gameFields[2][2].getOwner() == 0){ return emptyFields.get(i);}
+                if(gameFields[2][0].getOwner() == 0 && gameFields[1][1].getOwner() == 0){ return emptyFields.get(i);}
+            }
+            else if (emptyFields.get(i)[0] == 1 && emptyFields.get(i)[1] == 0){
+                if(gameFields[0][0].getOwner() == 0 && gameFields[2][0].getOwner() == 0){ return emptyFields.get(i);}
+                if(gameFields[1][1].getOwner() == 0 && gameFields[1][2].getOwner() == 0){ return emptyFields.get(i);}
+            }
+            else if (emptyFields.get(i)[0] == 1 && emptyFields.get(i)[1] == 1){
+                if(gameFields[0][0].getOwner() == 0 && gameFields[2][2].getOwner() == 0){ return emptyFields.get(i);}
+                if(gameFields[2][0].getOwner() == 0 && gameFields[0][2].getOwner() == 0){ return emptyFields.get(i);}
+                if(gameFields[1][0].getOwner() == 0 && gameFields[1][2].getOwner() == 0){ return emptyFields.get(i);}
+                if(gameFields[0][1].getOwner() == 0 && gameFields[2][1].getOwner() == 0){ return emptyFields.get(i);}
+            }
+            else if (emptyFields.get(i)[0] == 1 && emptyFields.get(i)[1] == 2){
+                if(gameFields[0][2].getOwner() == 0 && gameFields[2][2].getOwner() == 0){ return emptyFields.get(i);}
+                if(gameFields[1][0].getOwner() == 0 && gameFields[1][1].getOwner() == 0){ return emptyFields.get(i);}
+            }
+            else if (emptyFields.get(i)[0] == 2 && emptyFields.get(i)[1] == 0){
+                if(gameFields[1][1].getOwner() == 0 && gameFields[0][2].getOwner() == 0){ return emptyFields.get(i);}
+                if(gameFields[0][0].getOwner() == 0 && gameFields[1][0].getOwner() == 0){ return emptyFields.get(i);}
+                if(gameFields[2][1].getOwner() == 0 && gameFields[2][2].getOwner() == 0){ return emptyFields.get(i);}
+            }
+            else if (emptyFields.get(i)[0] == 2 && emptyFields.get(i)[1] == 1){
+                if(gameFields[2][0].getOwner() == 0 && gameFields[2][2].getOwner() == 0){ return emptyFields.get(i);}
+                if(gameFields[0][1].getOwner() == 0 && gameFields[1][1].getOwner() == 0){ return emptyFields.get(i);}
+            }
+            else if (emptyFields.get(i)[0] == 2 && emptyFields.get(i)[1] == 2){
+                if(gameFields[1][1].getOwner() == 0 && gameFields[0][0].getOwner() == 0){ return emptyFields.get(i);}
+                if(gameFields[2][1].getOwner() == 0 && gameFields[2][0].getOwner() == 0){ return emptyFields.get(i);}
+                if(gameFields[0][2].getOwner() == 0 && gameFields[1][2].getOwner() == 0){ return emptyFields.get(i);}
+            }
+        }
+        return level2(emptyFields);
     }
-
-
-
 }
