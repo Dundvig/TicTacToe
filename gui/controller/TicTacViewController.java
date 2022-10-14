@@ -40,7 +40,9 @@ public class TicTacViewController implements Initializable
     private static final String TXT_PLAYER = "Player: ";
     private IGameModel game;
 
-
+    /**
+     * Places an X or an O depending on whose turn it is.
+     */
     @FXML
     private void handleButtonAction(ActionEvent event)
     {
@@ -75,8 +77,7 @@ public class TicTacViewController implements Initializable
         }
 
         /**
-         * If gamedifficulty is not 0 (Single player) we have to make a computermove.
-         * we check if player is set to 1 (Computer player) and gamedifficulty is not 0 ( 0 => multiplayer).
+         * We check if player is set to 1 (Computer player) and gamedifficulty is not 0 ( 0 => multiplayer).
          */
         if(game.getDifficulty() !=0 && game.getCurrentPlayer() == 1){
             //Initialize an empty button to use later
@@ -114,7 +115,9 @@ public class TicTacViewController implements Initializable
         }
 
     }
-
+    /**
+    * Getter method for the label which is used to place the X or O in fields the player clicks on.
+    */
     public String getLabel(int owner){
         switch (owner){
             case 0:
@@ -129,6 +132,9 @@ public class TicTacViewController implements Initializable
         }
     }
 
+    /**
+     * Initializes a new game when the button "New game" is pressed.
+     */
     @FXML
     private void handleNewGame(ActionEvent event)
     {
@@ -136,7 +142,9 @@ public class TicTacViewController implements Initializable
         setPlayer();
         clearBoard();
     }
-
+    /**
+     * Initializes a new game when the window opens.
+     */
     @Override
     public void initialize(URL url, ResourceBundle rb)
     {
@@ -144,11 +152,16 @@ public class TicTacViewController implements Initializable
         setPlayer();
     }
 
+    /**
+     * Changes the top label to indicate who's move it is.
+     */
     private void setPlayer()
     {
         lblPlayer.setText(TXT_PLAYER + game.getNextPlayer());
     }
-
+    /**
+     * Changes the top label to indicate who won or if it was a draw.
+     */
     private void displayWinner(int winner)
     {
         String message = "";
@@ -164,6 +177,9 @@ public class TicTacViewController implements Initializable
         lblPlayer.setText(message);
     }
 
+    /**
+     * Removes all X & O on the board.
+     */
     private void clearBoard()
     {
         for(Node n : gridPane.getChildren())
@@ -173,7 +189,9 @@ public class TicTacViewController implements Initializable
         }
     }
 
-    /* Returns you to the Main Menu and closes the Game board. */
+    /**
+     *  Returns you to the Main Menu and closes the Game board.
+     */
     public void handleMainMenu(ActionEvent actionEvent) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("/views/Menuscreen.fxml"));
         Stage stage = new Stage();

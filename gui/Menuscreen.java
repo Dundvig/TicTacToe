@@ -13,7 +13,9 @@ import javafx.stage.Stage;
 
 public class Menuscreen extends Application {
 
-
+    /**
+     * Opens up a Menu when the app is started.
+     */
     @Override
     public void start(Stage stage) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("/views/Menuscreen.fxml"));

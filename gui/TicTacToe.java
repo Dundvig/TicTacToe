@@ -18,7 +18,9 @@ import javafx.stage.Stage;
  */
 public class TicTacToe extends Application
 {
-    
+    /**
+     * Initializes the game window.
+     */
     @Override
     public void start(Stage stage) throws Exception
     {

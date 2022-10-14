@@ -18,7 +18,9 @@ public class GameField {
         return owner!=-1;
     }
 
-
+    /**
+     * Creates a multidimensional array which is used as coordinates for the gameboard.
+     */
     public static GameField[][] newGameFields(){
         GameField[][] output = new GameField[3][3];
         for (int r = 0; r < output.length; r++){

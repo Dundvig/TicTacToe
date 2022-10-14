@@ -180,7 +180,7 @@ public class ComputerMove {
                 if(gameFields[0][2].getOwner() == 0 && gameFields[1][2].getOwner() == 0){ return emptyFields.get(i);}
             }
         }
-        //If we cant make or block a winning move, we are going to use the prios from level 2.
+        //If we can't make or block a winning move, we are going to use the prios from level 2.
         return level2(emptyFields);
     }
 }
