@@ -20,6 +20,13 @@ public class GameBoard implements IGameModel
 
     private int difficulty = MenuScreenController.getDif();
 
+    public  int getDifficulty(){return  difficulty;}
+    public int getCurrentPlayer(){return  currentPlayer;}
+
+    public GameField[][] getGameFields() {
+        return gameFields;
+    }
+
     /**
      * Returns 0 for player 0, 1 for player 1.
      *
@@ -121,6 +128,9 @@ public class GameBoard implements IGameModel
          * Check if all fields i taken. If all fields is not taken the game will continue
          */
 
+            //Because human always start, computer can only make move 2,4,6,8 and there will always be an empty field.
+
+
             for (int r = 0; r < gameFields.length; r++) {
                 for (int c = 0; c < gameFields[r].length; c++) {
                     if(!gameFields[r][c].isTaken()){return false;}
@@ -132,7 +142,9 @@ public class GameBoard implements IGameModel
         return true;
     }
 
-    private void computerMove(){
+    public void computerMove(){
+        int[]  move = ComputerMove.getComputerMove(difficulty, gameFields);
+        play(move[1],move[0]);
 
     }
 

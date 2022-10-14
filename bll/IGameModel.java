@@ -12,6 +12,11 @@ package tictactoe.bll;
 public interface IGameModel
 {
 
+    public int getDifficulty();
+
+    public int getCurrentPlayer();
+
+    public GameField[][] getGameFields();
     /**
      * Returns 0 for player 0, 1 for player 1.
      *

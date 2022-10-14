@@ -19,6 +19,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
+import tictactoe.bll.ComputerMove;
 import tictactoe.bll.GameBoard;
 import tictactoe.bll.GameField;
 import tictactoe.bll.IGameModel;
@@ -43,14 +44,14 @@ public class TicTacViewController implements Initializable
     @FXML
     private void handleButtonAction(ActionEvent event)
     {
+
         try
         {
             Integer row = GridPane.getRowIndex((Node) event.getSource());
             Integer col = GridPane.getColumnIndex((Node) event.getSource());
             int r = (row == null) ? 0 : row;
             int c = (col == null) ? 0 : col;
-            //int player = game.getNextPlayer();
-            System.out.println("r="+r+" c="+c);
+
             if (game.play(c, r) && game.getWinner() ==-1)
             {
                 Button btn = (Button) event.getSource();
@@ -72,6 +73,35 @@ public class TicTacViewController implements Initializable
         {
             System.out.println(e.getMessage());
         }
+
+        if(game.getDifficulty() !=0 && game.getCurrentPlayer() == 1){
+            Button btn = new Button();
+
+            int[] computerMove = ComputerMove.getComputerMove(game.getDifficulty(),game.getGameFields());
+            if(computerMove.length == 0){return;}
+
+            if (game.play(computerMove[1],computerMove[0]) && game.getWinner() ==-1){
+
+                for(Node node:gridPane.getChildren()){
+                    if(GridPane.getRowIndex(node) == computerMove[0] && GridPane.getColumnIndex(node) == computerMove[1]){
+                        btn = (Button) node;
+
+                    }
+                }
+            }
+                            if (game.isGameOver())
+                {
+                    int winner = game.getWinner();
+                    displayWinner(winner);
+                    btn.setText("X");
+                }
+                else
+                {
+                    btn.setText("X");
+                    setPlayer();
+                }
+        }
+
     }
 
     public String getLabel(int owner){

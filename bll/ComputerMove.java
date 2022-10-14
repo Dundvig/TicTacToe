@@ -48,19 +48,25 @@ public class ComputerMove {
         prio3.add(new int[]{0,1});
         Collections.shuffle(prio3);
 
-        if(emptyFields.contains(prio1.get(0))){
-            return prio1.get(0);
+        for(int i = 0; i < emptyFields.size(); i++){
+            if(prio1.get(0)[0] == emptyFields.get(i)[0] && prio1.get(0)[1] == emptyFields.get(i)[1]){
+                return emptyFields.get(i);
+            }
         }
 
         for (int i = 0; i < prio2.size();i++){
-            if (emptyFields.contains(prio2.get(i))){
-                return prio2.get(i);
+            for (int j = 0; j < emptyFields.size(); j++){
+                if(prio2.get(i)[0] == emptyFields.get(j)[0] && prio2.get(i)[1] == emptyFields.get(j)[1]){
+                        return  emptyFields.get(j);
+                }
             }
         }
 
         for (int i = 0; i < prio3.size();i++){
-            if (emptyFields.contains(prio3.get(i))){
-                return prio3.get(i);
+            for (int j = 0; j < emptyFields.size(); j++){
+                if(prio3.get(i)[0] == emptyFields.get(j)[0] && prio3.get(i)[1] == emptyFields.get(j)[1]){
+                    return  emptyFields.get(j);
+                }
             }
         }
 
