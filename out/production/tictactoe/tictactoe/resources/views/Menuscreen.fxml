@@ -10,35 +10,34 @@
 
 <AnchorPane prefHeight="500.0" prefWidth="400.0" styleClass="chalkstyle" stylesheets="@../css/Main.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tictactoe.gui.controller.MenuScreenController">
    <children>
-      <Button fx:id="singlePlayer" graphicTextGap="0.0" layoutX="97.0" layoutY="108.0" mnemonicParsing="false" mouseTransparent="true" onAction="#singlePlayerBtn" prefHeight="51.0" prefWidth="205.0" styleClass="chalkstyle" text="Single Player" textAlignment="CENTER" textFill="WHITE" wrapText="true">
-         <font>
-            <Font size="18.0" />
-         </font>
-         </Button>
-      <Button fx:id="multiPlayer" layoutX="97.0" layoutY="242.0" mnemonicParsing="false" mouseTransparent="true" onAction="#multiPlayerBtn" prefHeight="51.0" prefWidth="205.0" styleClass="chalkstyle" text="Multiplayer" textAlignment="CENTER" textFill="WHITE">
-         <font>
-            <Font size="20.0" />
-         </font>
-      </Button>
-      <Button fx:id="quitGame" layoutX="97.0" layoutY="428.0" mnemonicParsing="false" mouseTransparent="true" onAction="#quitGameBtn" prefHeight="51.0" prefWidth="205.0" styleClass="chalkstyle" text="Quit Game" textAlignment="CENTER" textFill="WHITE">
-         <font>
-            <Font size="20.0" />
-         </font>
-      </Button>
-      <Button fx:id="options" layoutX="97.0" layoutY="323.0" mnemonicParsing="false" mouseTransparent="true" onAction="#optionsBtn" prefHeight="51.0" prefWidth="205.0" styleClass="chalkstyle" text="Options" textAlignment="CENTER" textFill="WHITE">
-         <font>
-            <Font size="20.0" />
-         </font>
-      </Button>
-      <RadioButton fx:id="easyMode" layoutX="74.0" layoutY="189.0" mnemonicParsing="false" selected="true" text="Easy" textFill="WHITE">
-         <toggleGroup>
-            <ToggleGroup fx:id="difToggle" />
-         </toggleGroup></RadioButton>
-      <RadioButton fx:id="hardMode" layoutX="279.0" layoutY="189.0" mnemonicParsing="false" text="Hard" textFill="WHITE" toggleGroup="$difToggle" />
-      <RadioButton fx:id="intermediateMode" layoutX="155.0" layoutY="189.0" mnemonicParsing="false" text="Intermediate" textFill="WHITE" toggleGroup="$difToggle" />
       <ImageView fx:id="image" fitHeight="70.0" fitWidth="330.0" layoutX="142.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../images/Logo.png" />
          </image></ImageView>
+      <RadioButton fx:id="easyMode" layoutX="74.0" layoutY="189.0" mnemonicParsing="false" selected="true" text="Easy" textFill="WHITE">
+         <toggleGroup>
+            <ToggleGroup fx:id="difToggle" />
+         </toggleGroup></RadioButton>
+      <Button fx:id="quitGame" layoutX="97.0" layoutY="418.0" mnemonicParsing="false" onAction="#quitGameBtn" prefHeight="51.0" prefWidth="205.0" styleClass="buttonSkin" text="Quit Game" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="multiPlayer" layoutX="50.0" layoutY="243.0" mnemonicParsing="false" onAction="#multiPlayerBtn" prefHeight="51.0" prefWidth="300.0" styleClass="buttonSkin" text="Multiplayer" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="tglRay" layoutX="50.0" layoutY="324.0" mnemonicParsing="false" onAction="#tglRayBtn" prefHeight="51.0" prefWidth="300.0" styleClass="buttonSkin" text="Toggle Raytracing" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <RadioButton fx:id="hardMode" layoutX="279.0" layoutY="189.0" mnemonicParsing="false" text="Hard" textFill="WHITE" toggleGroup="$difToggle" />
+      <RadioButton fx:id="intermediateMode" layoutX="155.0" layoutY="189.0" mnemonicParsing="false" text="Intermediate" textFill="WHITE" toggleGroup="$difToggle" />
+      <Button fx:id="singlePlayer" defaultButton="true" layoutX="50.0" layoutY="110.0" mnemonicParsing="false" onAction="#singlePlayerBtn" prefHeight="51.0" prefWidth="300.0" styleClass="buttonSkin" text="Single Player" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font></Button>
    </children>
 </AnchorPane>
