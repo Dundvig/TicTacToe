@@ -132,6 +132,10 @@ public class GameBoard implements IGameModel
         return true;
     }
 
+    private void computerMove(){
+
+    }
+
     /**
      * Gets the id of the winner, -1 if its a draw.
      *

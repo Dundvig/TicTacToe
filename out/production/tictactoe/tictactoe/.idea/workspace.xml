@@ -6,23 +6,17 @@
   <component name="ChangeListManager">
     <list default="true" id="acf0a4f5-aee0-40c4-88ef-db671befb327" name="Changes" comment="Final for Tirsdag">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bll/GameBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/bll/GameBoard.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gui/Menuscreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/gui/Menuscreen.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gui/controller/MenuScreenController.java" beforeDir="false" afterPath="$PROJECT_DIR$/gui/controller/MenuScreenController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gui/controller/OptionsMenuController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gui/controller/TicTacViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/gui/controller/TicTacViewController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/tictactoe/css/Main.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/tictactoe/css/Main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/tictactoe/tictactoe/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/tictactoe/tictactoe/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/tictactoe/tictactoe/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/tictactoe/tictactoe/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/tictactoe/tictactoe/resources/css/Main.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/tictactoe/tictactoe/resources/css/Main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/tictactoe/tictactoe/resources/views/Menuscreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/tictactoe/tictactoe/resources/views/Menuscreen.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/tictactoe/tictactoe/resources/views/OptionsMenuView.fxml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/tictactoe/tictactoe/resources/views/TicTacView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/tictactoe/tictactoe/resources/views/TicTacView.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/tictactoe/views/Menuscreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/tictactoe/views/Menuscreen.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/tictactoe/views/OptionsMenuView.fxml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/tictactoe/views/TicTacView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/tictactoe/views/TicTacView.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/css/Main.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/css/Main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/Menuscreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Menuscreen.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/OptionsMenuView.fxml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/TicTacView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/TicTacView.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
