@@ -4,9 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="acf0a4f5-aee0-40c4-88ef-db671befb327" name="Changes" comment="Final for Tirsdag">
+    <list default="true" id="acf0a4f5-aee0-40c4-88ef-db671befb327" name="Changes" comment="ComputerMove">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bll/ComputerMove.java" beforeDir="false" afterPath="$PROJECT_DIR$/bll/ComputerMove.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bll/GameBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/bll/GameBoard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/tictactoe/tictactoe/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/tictactoe/tictactoe/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bll/IGameModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/bll/IGameModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui/controller/TicTacViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/gui/controller/TicTacViewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/tictactoe/tictactoe/resources/views/TicTacView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/tictactoe/tictactoe/resources/views/TicTacView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/tictactoe/views/TicTacView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/tictactoe/views/TicTacView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/TicTacView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/TicTacView.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,7 +165,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665481701682</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="ComputerMove">
+      <created>1665729798224</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1665729798224</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -181,7 +194,8 @@
     <MESSAGE value="Flyttet Main.CSS ned til resources." />
     <MESSAGE value="Rettet menuscreen så den virker nogenlunde og med style" />
     <MESSAGE value="Final for Tirsdag" />
-    <option name="LAST_COMMIT_MESSAGE" value="Final for Tirsdag" />
+    <MESSAGE value="ComputerMove" />
+    <option name="LAST_COMMIT_MESSAGE" value="ComputerMove" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -190,7 +204,27 @@
           <properties class="java.lang.RuntimeException" package="java.lang" />
           <option name="timeStamp" value="1" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/bll/GameBoard.java</url>
+          <line>146</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/bll/GameBoard.java</url>
+          <line>145</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/bll/ComputerMove.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/TicTacToe2$Menuscreen.ic" NAME="Menuscreen Coverage Results" MODIFIED="1665735111167" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>tictactoe.gui.*</FILTER>
+    </SUITE>
   </component>
 </project>
