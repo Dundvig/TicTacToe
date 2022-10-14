@@ -14,7 +14,7 @@ import javafx.stage.Stage;
 
 /**
  *
- * @author Stegger
+ * @author Gruppe 5
  */
 public class TicTacToe extends Application
 {

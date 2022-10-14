@@ -2,6 +2,10 @@ package tictactoe.bll;
 import java.util.ArrayList;
 import java.util.Collections;
 
+/**
+ *
+ * @author Gruppe 5
+ */
 public class ComputerMove {
 
     public static int[] getComputerMove(int level, GameField[][] gameFields ){

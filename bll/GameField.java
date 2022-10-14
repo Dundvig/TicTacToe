@@ -1,5 +1,8 @@
 package tictactoe.bll;
-
+/**
+ *
+ * @author Gruppe 5
+ */
 public class GameField {
     private  int owner =-1;
 

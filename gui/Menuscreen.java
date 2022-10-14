@@ -6,7 +6,10 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-
+/**
+ *
+ * @author Gruppe 5
+ */
 
 public class Menuscreen extends Application {
 

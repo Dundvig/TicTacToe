@@ -9,7 +9,7 @@ import tictactoe.gui.controller.MenuScreenController;
 
 /**
  *
- * @author Stegger
+ * @author Gruppe 5
  */
 public class GameBoard implements IGameModel
 {

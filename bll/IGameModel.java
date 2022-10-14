@@ -7,7 +7,7 @@ package tictactoe.bll;
 
 /**
  *
- * @author Stegger
+ * @author Gruppe 5
  */
 public interface IGameModel
 {
