@@ -15,6 +15,8 @@ public class ComputerMove {
                 }
             }
         }
+
+        //Decide what logic to use
         switch (level){
             case 1:
                 return level1(emptyFields);
@@ -25,7 +27,9 @@ public class ComputerMove {
         }
     }
 
+
     private static int[] level1(ArrayList<int[]> emptyFields){
+        //Shuffle the list of empty fields and the take the first
         Collections.shuffle(emptyFields);
         return emptyFields.get(0);
     }

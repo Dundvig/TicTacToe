@@ -74,14 +74,24 @@ public class TicTacViewController implements Initializable
             System.out.println(e.getMessage());
         }
 
+        /**
+         * If gamedifficulty is not 0 (Single player) we have to make a computermove.
+         * we check if player is set to 1 (Computer player) and gamedifficulty is not 0 ( 0 => multiplayer).
+         */
         if(game.getDifficulty() !=0 && game.getCurrentPlayer() == 1){
+            //Initialize an empty button to use later
             Button btn = new Button();
 
+            //Call the computer move logic to get the computers move
             int[] computerMove = ComputerMove.getComputerMove(game.getDifficulty(),game.getGameFields());
+
+            //failsafe to break out if there is no computermove.
             if(computerMove.length == 0){return;}
 
+            //Execute the play method with the computermove
             if (game.play(computerMove[1],computerMove[0]) && game.getWinner() ==-1){
 
+                //Find the button in the gridpane, so the text label can be changed.
                 for(Node node:gridPane.getChildren()){
                     if(GridPane.getRowIndex(node) == computerMove[0] && GridPane.getColumnIndex(node) == computerMove[1]){
                         btn = (Button) node;
@@ -89,7 +99,8 @@ public class TicTacViewController implements Initializable
                     }
                 }
             }
-                            if (game.isGameOver())
+            //Check for winner
+            if (game.isGameOver())
                 {
                     int winner = game.getWinner();
                     displayWinner(winner);

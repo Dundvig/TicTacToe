@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="acf0a4f5-aee0-40c4-88ef-db671befb327" name="Changes" comment="ComputerMove">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bll/ComputerMove.java" beforeDir="false" afterPath="$PROJECT_DIR$/bll/ComputerMove.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bll/GameBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/bll/GameBoard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bll/IGameModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/bll/IGameModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gui/controller/TicTacViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/gui/controller/TicTacViewController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/tictactoe/tictactoe/resources/views/TicTacView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/tictactoe/tictactoe/resources/views/TicTacView.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/tictactoe/views/TicTacView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/tictactoe/views/TicTacView.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/TicTacView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/TicTacView.fxml" afterDir="false" />
-    </list>
+    <list default="true" id="acf0a4f5-aee0-40c4-88ef-db671befb327" name="Changes" comment="ComputerMove" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -172,7 +163,21 @@
       <option name="project" value="LOCAL" />
       <updated>1665729798224</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="ComputerMove">
+      <created>1665738359016</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1665738359016</updated>
+    </task>
+    <task id="LOCAL-00010" summary="ComputerMove">
+      <created>1665738368797</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1665738368797</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
