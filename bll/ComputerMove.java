@@ -29,12 +29,13 @@ public class ComputerMove {
 
 
     private static int[] level1(ArrayList<int[]> emptyFields){
-        //Shuffle the list of empty fields and the take the first
+        //Shuffle the list of empty fields and the take the first field in the list
         Collections.shuffle(emptyFields);
         return emptyFields.get(0);
     }
 
     private static int[] level2(ArrayList<int[]> emptyFields){
+        //create 3 prio lists.
         ArrayList<int[]> prio1 = new ArrayList<>();
         prio1.add(new int[]{1,1});
 
@@ -43,6 +44,7 @@ public class ComputerMove {
         prio2.add(new int[]{2,0});
         prio2.add(new int[]{0,2});
         prio2.add(new int[]{2,2});
+        //randomize the list so we will get a random field order. All fields in the list has even priority
         Collections.shuffle(prio2);
 
         ArrayList<int[]> prio3 = new ArrayList<>();
@@ -50,14 +52,17 @@ public class ComputerMove {
         prio3.add(new int[]{1,0});
         prio3.add(new int[]{2,1});
         prio3.add(new int[]{0,1});
+        //randomize the list so we will get a random field order. All fields in the list has even priority
         Collections.shuffle(prio3);
 
+        //Check if a field from empty fields matches a field from prio1. Return first match
         for(int i = 0; i < emptyFields.size(); i++){
             if(prio1.get(0)[0] == emptyFields.get(i)[0] && prio1.get(0)[1] == emptyFields.get(i)[1]){
                 return emptyFields.get(i);
             }
         }
 
+        //Check if a field from empty fields matches a field from prio2. Return first match
         for (int i = 0; i < prio2.size();i++){
             for (int j = 0; j < emptyFields.size(); j++){
                 if(prio2.get(i)[0] == emptyFields.get(j)[0] && prio2.get(i)[1] == emptyFields.get(j)[1]){
@@ -66,6 +71,7 @@ public class ComputerMove {
             }
         }
 
+        //Check if a field from empty fields matches a field from prio3. Return first match
         for (int i = 0; i < prio3.size();i++){
             for (int j = 0; j < emptyFields.size(); j++){
                 if(prio3.get(i)[0] == emptyFields.get(j)[0] && prio3.get(i)[1] == emptyFields.get(j)[1]){
@@ -170,6 +176,7 @@ public class ComputerMove {
                 if(gameFields[0][2].getOwner() == 0 && gameFields[1][2].getOwner() == 0){ return emptyFields.get(i);}
             }
         }
+        //If we cant make or block a winning move, we are going to use the prios from level 2.
         return level2(emptyFields);
     }
 }
